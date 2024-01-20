@@ -23,6 +23,8 @@ let package = Package(
         .binaryTarget(name: "FirebaseSessions", path: "Frameworks/FirebaseCrashlytics/FirebaseSessions.xcframework"),
         .binaryTarget(name: "GoogleDataTransport", path: "Frameworks/FirebaseCrashlytics/GoogleDataTransport.xcframework"),
         
+        .binaryTarget(name: "FirebaseDatabase", path: "Frameworks/FirebaseDatabase/FirebaseDatabase.xcframework"),
+        
         .binaryTarget(name: "abseil", path: "Frameworks/FirebaseFirestore/abseil.xcframework"),
         .binaryTarget(name: "BoringSSL-GRPC", path: "Frameworks/FirebaseFirestore/BoringSSL-GRPC.xcframework"),
         .binaryTarget(name: "FirebaseAppCheckInterop", path: "Frameworks/FirebaseFirestore/FirebaseAppCheckInterop.xcframework"),
@@ -51,6 +53,7 @@ let package = Package(
                 .target(name: "nanopb"),
                 .target(name: "FirebaseCrashlytics"),
                 .target(name: "FirebaseSessions"),
+                .target(name: "FirebaseDatabase"),
                 .target(name: "abseil"),
                 .target(name: "BoringSSL-GRPC"),
                 .target(name: "FirebaseAppCheckInterop"),
